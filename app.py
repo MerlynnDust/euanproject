@@ -20,7 +20,7 @@ def hello_world():
 
 @app.route("/check_ip", methods=["GET"])
 def get_my_ip():
-    if request.remote_addr in database1 == True:
+    if request.remote_addr in database1:
         return jsonify({'ip': request.remote_addr,'reason':})
     else
 
